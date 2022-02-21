@@ -14,16 +14,16 @@
   </head>
   <body>
     <header>
-      <nav id="header-nav" class="navbar navbar-dark">
-        <div class="container">
+      <nav id="header-nav" class="navbar navbar-expand-md navbar-dark">
+        <div class="container d-flex align-items-end">
           <div class="navbar-brand">
             <a href="index.html" class="align-text-bottom d-none d-lg-inline-block">
               <img src="resources\avatar.svg" alt="profile picture" width="150" height="150">
             </a>
-            <div class="d-inline-block align-text-bottom">
+            <div class="d-inline-block">
               <a href="index.html">
                 <h1 class="d-none d-md-block">George K. Darkwah</h1>
-                <h1 class="d-block d-md-none">G. K. Darkwah</h1>
+                <h1 class="d-block d-md-none">G K Darkwah</h1>
               </a>
               <div class="d-none d-md-block">  
                 <p>Graduate Research Assistant</p>
@@ -33,6 +33,18 @@
                 <!-- change the icons class from d-none to display -->
                 <p class="d-none"><span>[place holder for icons]</span></p>
               </div>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link disabled" href="#">About</a>
+              <a class="nav-link disabled" href="#">Research</a>
+              <a class="nav-link disabled" href="#">Lifestyle</a>
+              <a class="nav-link disabled" href="#">Contact</a>
             </div>
           </div>
         </div>
