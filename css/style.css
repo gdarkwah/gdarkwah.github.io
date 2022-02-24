@@ -35,6 +35,19 @@ body {
     color: 1px solid rgb(126, 25, 25);
 }
 
+@media (min-width: 992px) {
+    #mainlogo {
+        width: 60px
+    }
+}
+
+@media (max-width: 991px) {
+    #mainlogo {
+        width: 30px
+    }
+}
+
+
 /* END OF HEADER */
 
 
