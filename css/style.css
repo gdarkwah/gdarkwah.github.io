@@ -4,7 +4,7 @@
 body {
     font-size: 16px;
     color: white;
-    background-color: rgb(221, 221, 221)
+    background-color: white;
 }
 
 /* HEADER */
@@ -52,7 +52,7 @@ body {
 
 
 /* FOOTER */
-#foot {
+/* #foot {
     background-color: rgb(119, 119, 119);
-}
+} */
 /* END OF FOOTER */
