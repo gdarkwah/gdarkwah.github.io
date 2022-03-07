@@ -1,0 +1,8 @@
+I'm a full-time graduate student and a reshearch assistant at Tennessee Tech University, Cookeville, TN. My focus is in water resource engineering. I'm currently using machine learning techniques to develop a surrogate model for TRITON (a numerical hydrodynamic model). I'm also working on a machine-learning-based flood forecasting system for the Window Cliffs State Natural Area, TN.
+
+I enjoy running, cooking (and obviously, eating), reading and getting myself fascinated with nature or some interesting tech.
+
+I recently started learning web development, the main reason why I started my personal website. I will be sharing more about my projects (academic and non-academic), and some educational and lifestyle content.
+
+Be sure to visit again as my page is still under construction. <br>
+Cheers!
