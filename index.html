@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-dark">
+      <nav class="navbar  navbar-expand-md navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <!-- <div class="d-inline-flex align-self-center me-1"> -->
@@ -22,11 +22,27 @@
             <!-- </div> -->
             <!-- <span class="h1 d-none d-md-inline-block">George Darkwah</span> -->
           </a> <!--end of logo article-->
+
+          <!-- TODO: work on how the toggler collapse when not in focus -->
+          <!-- TODO: remove the border -->
+          <!-- TODO: make the toggler white -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link disabled" href="#">About</a>
+              <a class="nav-link disabled" href="#">Projects</a>
+              <a class="nav-link disabled" href="#">Lifestyle</a>
+              <a class="nav-link disabled" href="#">Contact</a>
+            </div>
+          </div>
         </div>
       </nav>      
     </header>
-
-    <div class="container vh-100 d-flex align-items-center justify-content-md-center">
+    
+    <div id='main_content' class="container vh-100 d-flex align-items-center justify-content-md-center">
       <div id="personal_summary" class="h-75">
         <div class="fs-3">
           <span class="d-block d-md-inline">Hi, I'm George!</span>
@@ -47,14 +63,16 @@
             Cheers! <i class="bi bi-hand-thumbs-up-fill"></i>
           </p>  
         </div>
-        
-        <footer class="border-top pt-1 border-secondary">
-          <a class="text-white" href="mailto:gdarkwah@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-          <a class="ms-2 me-2 text-white" href="https://github.com/gdarkwah" target="_blank"><i class="bi bi-github"></i></a>
-          <a class="text-white" href="https://www.linkedin.com/in/george-darkwah/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </footer>
       </div>
     </div>
+
+    <footer>
+      <div class="container border-top pt-1 border-secondary d-block">
+        <a class="text-white" href="mailto:gdarkwah@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a class="ms-2 me-2 text-white" href="https://github.com/gdarkwah" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="text-white" href="https://www.linkedin.com/in/george-darkwah/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
