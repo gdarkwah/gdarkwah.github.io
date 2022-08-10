@@ -9,53 +9,133 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="navbar navbar-dark navbar-expand-lg bg-secondary">
-      <!-- <div class="container-md"> -->
-      <nav class="container-md">
-        <!-- <div class="container-fluid"> -->
-        <div class="col-5 d-flex justify-content-start">
-          About, Projects, Lifestyle, Blog (Right aligned)
+    <header class="navbar navbar-expand-lg navbar-dark sticky-top bg-secondary">
+      <nav class="container-lg" aria-label="Main navigation">
+        <div class="col-5">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item d-none">
+              <a class="nav-link disabled">Projects</a>
+            </li>
+            <li class="nav-item dropdown d-none">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lifestyle
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Running</a></li>
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="#" role="button">
+                Blog
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="d-flex col-2 justify-content-center">
+        <div class="col-2 d-flex justify-content-center">
           <a class="navbar-brand" id="navbar_logo" href="index.html">gd</a>
         </div>
         <div class="col-5 d-flex justify-content-end">
-          Logos (YouTube, GitHub, LinkedIn, Scholar, (probably Email); Right aligned)
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar_offcanvas" aria-controls="navbar_offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!-- remove the border of this button -->
+          </button>
+          <div class="offcanvas offcanvas-end bg-secondary" id="navbar_offcanvas">
+            <div class="offcanvas-header px-4 pb-0">
+              <h5 class="offcanvas-title text-white">George Darkwah</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-4 pt-0 p-lg-0 justify-content-end">
+              <hr class="d-lg-none text-black-50">
+              <ul class="navbar-nav flex-row flex-wrap d-lg-none">
+                <li class="nav-item col-6">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item col-6">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item col-6 d-none">
+                  <a class="nav-link disabled">Projects</a>
+                </li>
+                <li class="nav-item col-6 dropdown d-none">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lifestyle
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Running</a></li>
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item col-6 d-none">
+                  <a class="nav-link" href="#" role="button">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+              <hr class="d-lg-none text-black-50">
+              <ul class="navbar-nav flex-row flex-wrap">
+                <li class="nav-item col-6 col-lg-auto">
+                  <!-- <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a> -->
+                  <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/gdarkwah" target="_blank">
+                    <i class="bi bi-github"></i>
+                    <small class="d-lg-none ms-2">GitHub</small>
+                  </a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                  <!-- <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a> -->
+                  <a class="nav-link py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/george-darkwah/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                    <small class="d-lg-none ms-2">LinkedIn</small>
+                  </a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                  <!-- <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a> -->
+                  <a class="nav-link py-2 px-0 px-lg-2" href="https://scholar.google.com/citations?user=BVjwUesAAAAJ&hl=en" target="_blank">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <small class="d-lg-none ms-2">Google Scholar</small>
+                  </a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                  <!-- <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a> -->
+                  <a class="nav-link py-2 px-0 px-lg-2" href="https://www.youtube.com/channel/UC34lkz-5yYiie4VlurYxKQQ" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                    <small class="d-lg-none ms-2">YouTube</small>
+                  </a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                  <!-- <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a> -->
+                  <a class="nav-link py-2 px-0 px-lg-2" href="mailto:gdarkwah@gmail.com" target="_blank">
+                    <!-- TODO: work on the link later -->
+                    <i class="bi bi-envelope-fill"></i>
+                    <small class="d-lg-none ms-2">Contact</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        
+
       </nav>
-      <!-- </div>      -->
     </header>
-    
-    <div id='main_content' class="container vh-100 d-flex align-items-center justify-content-md-center">
-      <div id="personal_summary" class="h-75">
-        <div class="fs-3">
-          <span class="d-block d-md-inline">Hi, I'm George!</span>
-          <span>I'm a student of life.</span>
-        </div>
-        <div class="align-self-center pt-5 pb-3">
-          <p>
-            I'm a full-time graduate student and a reshearch assistant at Tennessee Tech University, Cookeville, TN. My focus is in water resource engineering. I'm currently using machine learning techniques to develop a surrogate model for <a href="https://triton.ornl.gov/" target="_blank">TRITON</a> (a numerical hydrodynamic model). I'm also working on a machine-learning-based flood forecasting system for the Window Cliffs State Natural Area, TN.
-          </p>
-          <p>
-            I enjoy running, cooking (and obviously, eating), reading and getting myself fascinated with nature or some interesting tech.
-          </p>
-          <p>
-            I recently started learning web development, the main reason why I started my personal website. I will be sharing more about my projects (academic and non-academic), and some educational and lifestyle content.
-          </p>
-          <p>
-            Be sure to visit again as my page is still under construction. <br>
-            Cheers! <i class="bi bi-hand-thumbs-up-fill"></i>
-          </p>  
-        </div>
-      </div>
-    </div>
 
     <footer>
-      <div class="container border-top pt-1 border-secondary d-block">
-        <a class="text-white" href="mailto:gdarkwah@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-        <a class="ms-2 me-2 text-white" href="https://github.com/gdarkwah" target="_blank"><i class="bi bi-github"></i></a>
-        <a class="text-white" href="https://www.linkedin.com/in/george-darkwah/" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
+      <!-- <div class="container border-top pt-1 border-secondary d-block"> -->
+        <!-- <a class="text-white" href="mailto:gdarkwah@gmail.com"><i class="bi bi-envelope-fill"></i></a> -->
+        <!-- <a class="ms-2 me-2 text-white" href="https://github.com/gdarkwah" target="_blank"><i class="bi bi-github"></i></a> -->
+        <!-- <a class="text-white" href="https://www.linkedin.com/in/george-darkwah/" target="_blank"><i class="bi bi-linkedin"></i></a> -->
+      <!-- </div> -->
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
