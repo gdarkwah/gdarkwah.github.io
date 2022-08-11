@@ -1,16 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-body {
-    /* font-size: 64px; */
+/* body {
     color: white;
     background-color: #012169;
+} */
+
+#navbar_logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 48px;
+    /* color: white; */
+    padding: 0;
+    margin: 0;
 }
 
-/* #navbar_logo {
-    font-family: 'Delius Unicase', cursive;
-    color: white;
-} */
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.main_banner {
+    min-height: 100px;
+    position: relative;
+}
+.main_content {
+    min-height: 200px;
+}
 
 @media (min-width:992px) {
     #personal_summary {
