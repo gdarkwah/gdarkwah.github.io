@@ -23,6 +23,14 @@
     text-decoration: none;
 }
 
+.main_banner {
+    min-height: 100px;
+    position: relative;
+}
+.main_content {
+    min-height: 200px;
+}
+
 @media (min-width:992px) {
     #personal_summary {
         width: 936px;

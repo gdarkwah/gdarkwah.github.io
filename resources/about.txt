@@ -6,3 +6,26 @@ I recently started learning web development, the main reason why I started my pe
 
 Be sure to visit again as my page is still under construction. <br>
 Cheers!
+
+<div id="personal_summary" class="h-75">
+<div class="fs-3">
+    <span class="d-block d-md-inline">Hi, I'm George!</span>
+    <span>I'm a student of life.</span>
+</div>
+<div class="align-self-center pt-5 pb-3">
+    <p>
+    I'm a full-time graduate student and a reshearch assistant at Tennessee Tech University, Cookeville, TN. My focus is in water resource engineering. I'm currently using machine learning techniques to develop a surrogate model for <a href="https://triton.ornl.gov/" target="_blank">TRITON</a> (a numerical hydrodynamic model). I'm also working on a machine-learning-based flood forecasting system for the Window Cliffs State Natural Area, TN.
+    </p>
+    <p>
+    I enjoy running, cooking (and obviously, eating), reading and getting myself fascinated with nature or some interesting tech.
+    </p>
+    <p>
+    I recently started learning web development, the main reason why I started my personal website. I will be sharing more about my projects (academic and non-academic), and some educational and lifestyle content.
+    </p>
+    <p>
+    Be sure to visit again as my page is still under construction. <br>
+    Cheers! <i class="bi bi-hand-thumbs-up-fill"></i>
+    </p>  
+</div>
+</div>
+</div>
