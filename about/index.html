@@ -145,10 +145,10 @@
           <div class="container-fluid d-flex">
             <a class="navbar-brand mb-0 mx-2 h1" href="./../">
               <img
-                src="./../resources/profile-pic-16x16.jpg"
+                src="./../resources/profile-pic-256x256.jpg"
                 alt="G"
-                width="24"
-                height="24"
+                width="32"
+                height="32"
                 class="rounded-circle me-1"
               />
               George Darkwah</a
@@ -227,8 +227,8 @@
         </nav>
       </div>
 
-      <div class="container border-bottom">
-        <div class="card my-3 border-0">
+      <div class="container">
+        <div class="card my-3">
           <div class="row g-3">
             <div class="col-md-4 d-none d-md-flex">
               <img
@@ -246,31 +246,29 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-8 d-flex align-items-center">
+            <div
+              class="col-md-8 d-flex align-items-center"
+              id="personal-summary"
+            >
               <div class="card-body m-5">
-                <h5 class="card-title h1">Hi, I'm George</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit deleniti, sed consequuntur tenetur libero suscipit
-                  commodi velit vero, maxime dolor facilis nihil explicabo, quia
-                  consectetur culpa ab inventore mollitia odio. Lorem ipsum
-                  dolor sit amet consectetur, adipisicing elit. Unde laudantium
-                  iste earum pariatur corporis quo aspernatur cum eos veniam
-                  sint dolore est, necessitatibus ut numquam ratione dolores.
-                  Obcaecati, numquam tempore. Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Excepturi illo hic iure
-                  laboriosam sequi repudiandae nam voluptatem asperiores,
-                  deleniti id autem! Vitae quia dolor quas inventore dicta at
-                  veritatis aut! Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Fugiat itaque ipsa hic quia placeat? Sequi
-                  voluptatibus mollitia eaque maxime sunt quos culpa voluptate
-                  totam consequatur facere laboriosam alias, inventore
-                  molestiae? Lorem ipsum dolor sit, amet consectetur adipisicing
-                  elit. Unde quisquam consectetur fugit! Suscipit iste officia
-                  perspiciatis consequatur, accusamus ullam corporis quaerat
-                  quos veniam expedita illo tempore mollitia voluptatem at enim?
+                <h5 class="card-title h1 mb-4">Hi, I'm George</h5>
+                <p class="card-text" id="about-george">
+                  Born and raised in Ghana, I'm passionate about how I can
+                  contribute my skills to the development of people and their
+                  environments. I'm a civil engineering graduate student at the
+                  University of Washington focusing on water resources. On a
+                  normal day, I'm usually sitting behind my computer trying to
+                  understand how I can use satellite remote sensing to study the
+                  impacts of dams on river temperature and how that affects
+                  fish. I love running and cooking when I'm not doing graduate
+                  school stuff. I am interested in educating young people and
+                  helping them understand math and science in the context of
+                  their immediate environment [<a href="./../baseform/"
+                    >BaseForm</a
+                  >]. Lately, photography has been making its way into my list
+                  of hobbies [<a href="./../darkshot/">DarkShot</a>].
                 </p>
-                <p>
+                <p class="mt-4">
                   <span
                     ><a target="_blank" href="https://github.com/gdarkwah"
                       >GitHub</a
@@ -309,7 +307,7 @@
       </div>
 
       <div class="container">
-        <h2 class="h2 text-center my-3">Publications</h2>
+        <h2 class="h2 text-center my-3" id="publications">Publications</h2>
 
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-around"
@@ -599,5 +597,6 @@
     ></script>
     <script src="./../js/color-modes.js"></script>
     <script src="./../js/script.js"></script>
+    <!-- <script src="./../js/about.js"></script> -->
   </body>
 </html>
