@@ -117,7 +117,7 @@
 
     <script>
       // Set the target date (change this to your desired date)
-      const targetDate = new Date("2025-07-14T23:59:59");
+      const targetDate = new Date("2026-07-13T23:59:59");
 
       // Update the countdown every second
       const countdownInterval = setInterval(updateCountdown, 1000);
@@ -128,7 +128,7 @@
 
         if (timeLeft <= 0) {
           clearInterval(countdownInterval);
-          document.getElementById("countdown").textContent = "Happy New Year!";
+          document.getElementById("countdown").textContent = "You did it!";
         } else {
           const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
           const hours = Math.floor(
